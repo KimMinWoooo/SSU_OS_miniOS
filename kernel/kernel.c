@@ -38,10 +38,14 @@ int main() {
         {
             ipc();
         }
-	if (strcmp(input, "pimonte") == 0 )
+	if (strcmp(input, "pimonte") == 0 ) // Mutext 동기화
 	{
 	 pimonte();
 	}
+    if (strcmp(input, "Semaphorepimonte") == 0 ) // Semaphore 동기화
+    {
+        sema();
+    }
     
         else system(input);
     }
