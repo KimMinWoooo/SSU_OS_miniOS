@@ -19,10 +19,30 @@ int main() {
         if (strcmp(input,"exit") == 0) {
             break;
         }
+        if (strcmp(input, "Round") == 0 )
+	    {
+	     Round();
+	    }
+        if (strcmp(input, "process") == 0 )
+	    {
+	     process();
+	    }
 
         if (strcmp(input,"minisystem") == 0){
             minisystem();
         }
+	if (strcmp(input, "minwoo") == 0) {
+            printf("20192576 KimMinWoo OS\n");
+	}
+	if (strcmp(input,"ipc") == 0 )
+        {
+            ipc();
+        }
+	if (strcmp(input, "pimonte") == 0 )
+	{
+	 pimonte();
+	}
+    
         else system(input);
     }
 
